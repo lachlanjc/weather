@@ -16,7 +16,7 @@ post '/' do
   @city = response.location['city']
   @region = response.location['region']
   
-  if @region = ""
+  if @region == ""
     @region = response.location['country']
   end
   
